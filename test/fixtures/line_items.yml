@@ -2,8 +2,8 @@
 
 one:
   product_id: 1
-  card_id: 1
+  cart_id: 1
 
 two:
   product_id: 1
-  card_id: 1
+  cart_id: 1
