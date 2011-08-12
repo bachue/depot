@@ -43,10 +43,12 @@ class LineItemsController < ApplicationController
     @cart = current_cart
     product = Product.find params[:product_id]
     @line_item = @cart.line_items.build :product => product
+#   same effect as the last line
+#   @line_item = product.line_items.build :cart => @cart
 
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to(@line_item, :notice => 'Line item was successfully created.') }
+        format.html { redirect_to(@line_item.cart, :notice => 'Line item was successfully created.') }
         format.xml  { render :xml => @line_item, :status => :created, :location => @line_item }
       else
         format.html { render :action => "new" }
