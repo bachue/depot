@@ -1,0 +1,7 @@
+rails generate controller Say hello goodbye
+rails scaffold Product title:string description:text image_url:string price:decimal
+rails generate controller store index
+rails generate scaffold cart
+rails generate scaffold line_item product_id:integer cart_id:integer
+rails generate migration add_quantity_to_line_items quantity:integer
+rails generate migration combine_items_in_cart
