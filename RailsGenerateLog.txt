@@ -5,3 +5,5 @@ rails generate scaffold cart
 rails generate scaffold line_item product_id:integer cart_id:integer
 rails generate migration add_quantity_to_line_items quantity:integer
 rails generate migration combine_items_in_cart
+rails generate scaffold order name:string address:text email:string pay_type:string
+rails generate migration add_order_id_to_line_item order_id:integer
