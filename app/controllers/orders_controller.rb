@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  skip_before_filter :authorize
   # GET /orders
   # GET /orders.xml
   def index

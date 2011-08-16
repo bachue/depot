@@ -7,3 +7,6 @@ rails generate migration add_quantity_to_line_items quantity:integer
 rails generate migration combine_items_in_cart
 rails generate scaffold order name:string address:text email:string pay_type:string
 rails generate migration add_order_id_to_line_item order_id:integer
+rails generate scaffold user name:string hashed_password:string salt:string
+rails generate controller sessions new create destroy
+rails generate controller admin index
