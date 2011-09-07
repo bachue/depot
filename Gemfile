@@ -9,6 +9,10 @@ gem 'sqlite3'
 
 gem 'will_paginate', '>= 3.0.pre'
 
+gem 'heroku'
+
+gem 'RedCloth', '>= 4.1.1'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
