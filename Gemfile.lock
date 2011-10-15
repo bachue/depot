@@ -99,6 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth (>= 4.1.1)
+  bundler
   capistrano
   heroku
   rails (= 3.0.9)
